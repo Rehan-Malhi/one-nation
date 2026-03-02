@@ -70,7 +70,7 @@ export default function Featured() {
             >
               {/* IMAGE */}
               <div className="relative h-[460px] w-full overflow-hidden">
-                <Image
+                <img
                   src={item.image}
                   alt={item.title}
                   fill

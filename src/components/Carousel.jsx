@@ -48,7 +48,7 @@ function RowMarquee({ speed = 10000 }) {
             className="group relative block h-[160px] sm:h-[180px] md:h-[300px] overflow-hidden rounded-2xl bg-white shadow-xl"
           >
             {/* IMAGE */}
-            <Image
+            <img
               src={item.img}
               alt={item.title}
               fill
