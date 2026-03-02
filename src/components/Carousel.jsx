@@ -8,9 +8,9 @@ import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 
 const ITEMS = [
-  { href: "/products/baseball-jerseys", img: "/products/baseball-jerseys/1.png", title: "Baseball Jerseys" },
-  { href: "/products/basketball-jerseys", img: "/products/basketball-jerseys/1.png", title: "Basketball Jerseys" },
-  { href: "/products/basketball-kits", img: "/products/basketball-kits/1.png", title: "Basketball Kits" },
+  { href: "/Products/baseball-jerseys", img: "/products/baseball-jerseys/1.png", title: "Baseball Jerseys" },
+  { href: "/Products/basketball-jerseys", img: "/products/basketball-jerseys/1.png", title: "Basketball Jerseys" },
+  { href: "/Products/basketball-kits", img: "/products/basketball-kits/1.png", title: "Basketball Kits" },
   { href: "/products/basketball-styled-jerseys", img: "/products/basketball-styled-jerseys/1.png", title: "Basketball Styled Jerseys" },
   { href: "/products/football-jerseys", img: "/products/football-jerseys/1.png", title: "Football Jerseys" },
   { href: "/products/hoodies", img: "/products/hoodies/1.png", title: "Hoodies" },
