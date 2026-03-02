@@ -5,70 +5,70 @@
       "title": "Baseball Jerseys",
       "slug": "baseball-jerseys",
       "description": "Premium cotton and blended T-shirts.",
-      "image": "/products/baseball-jerseys/1.png"
+      "image": "/Products/baseball-jerseys/1.png"
     },
     {
       "id": "2",
       "title": "Basketball Jerseys",
       "slug": "basketball-jerseys",
       "description": "Premium cotton and blended T-shirts.",
-      "image": "/products/basketball-jerseys/1.png"
+      "image": "/Products/basketball-jerseys/1.png"
     },
     {
       "id": "3",
       "title": "basketball kits",
       "slug": "basketball-kits",
       "description": "Premium cotton and blended T-shirts.",
-      "image": "/products/basketball-kits/1.png"
+      "image": "/Products/basketball-kits/1.png"
     },
     {
       "id": "4",
       "title": "Basketball Styled Jerseys",
       "slug": "basketball-styled-jerseys",
       "description": "Premium cotton and blended T-shirts.",
-      "image": "/products/basketball-styled-jerseys/1.png"
+      "image": "/Products/basketball-styled-jerseys/1.png"
     },
     {
       "id": "5",
       "title": "Football-Jerseys",
       "slug": "football-jerseys",
       "description": "Premium cotton and blended T-shirts.",
-      "image": "/products/football-jerseys/1.png"
+      "image": "/Products/football-jerseys/1.png"
     },
     {
       "id": "6",
       "title": "hoodies",
       "slug": "hoodies",
       "description": "Premium cotton and blended T-shirts.",
-      "image": "/products/hoodies/1.png"
+      "image": "/Products/hoodies/1.png"
     },
     {
       "id": "7",
       "title": "Sleeveless Hoodies",
       "slug": "sleeveless-hoodies",
       "description": "Premium cotton and blended T-shirts.",
-      "image": "/products/sleeveless-hoodies/1.png"
+      "image": "/Products/sleeveless-hoodies/1.png"
     },
     {
       "id": "8",
       "title": "Baseball Pants",
       "slug": "baseball-pants",
       "description": "Premium cotton and blended T-shirts.",
-      "image": "/products/baseball-pants/1.png"
+      "image": "/Products/baseball-pants/1.png"
     },
     {
       "id": "9",
       "title": "Sports shirts",
       "slug": "sports-shirts",
       "description": "Premium cotton and blended T-shirts.",
-      "image": "/products/sports-shirts/1.png"
+      "image": "/Products/sports-shirts/1.png"
     },
     {
       "id": "10",
       "title": "Premium cotton and blended T-shirts.",
       "slug": "t-shirts",
       "description": "Premium cotton and blended T-shirts.",
-      "image": "/products/t-shirts/1.png"
+      "image": "/Products/t-shirts/1.png"
     }
   ],
   "products": [
@@ -77,7 +77,7 @@
       "title": "Dirty South – Grey/Red Digital Camo Baseball Jersey",
       "slug": "dirty-south-grey-red-digital-camo-baseball-jersey",
       "description": "Lightweight breathable polyester designed for durability and all-day athletic comfort. Advanced sublimation printing delivers sharp grey digital camo patterns with bold red graphics and clear number detailing. Traditional button-front construction ensures a professional baseball look with reinforced stitching for long-lasting wear. Fully customizable including colors, logos, numbering, sponsor prints, fabric textures, and sizing from Youth to 5XL with private labeling and custom packaging options.",
-      "image": "/products/baseball-jerseys/2.png",
+      "image": "/Products/baseball-jerseys/2.png",
       "category": "baseball-jerseys"
     },
     {
@@ -85,7 +85,7 @@
       "title": "Cardinals – Yellow/Red Button-Up Baseball Jersey",
       "slug": "cardinals-yellow-red-button-baseball-jersey",
       "description": "Premium performance polyester engineered for ventilation and flexibility during active play. High-definition sublimation printing ensures vibrant yellow and red graphics with crisp lettering and number visibility. Classic button-up design provides a professional team appearance with reinforced seams for durability. Fully customizable in colors, logos, numbering styles, sponsor branding, fabric textures, and sizing from Youth to 5XL with private labeling available.",
-      "image": "/products/baseball-jerseys/1.png",
+      "image": "/Products/baseball-jerseys/1.png",
       "category": "baseball-jerseys"
     },
     {
@@ -93,7 +93,7 @@
       "title": "Blue Jays – White/Blue Pinstripe Baseball Jersey",
       "slug": "blue-jays-white-blue-pinstripe-baseball-jersey",
       "description": "Breathable mesh-blend polyester offering excellent airflow and durability for athletic performance. Precision sublimation printing produces clean white and blue pinstripe graphics with bold lettering and sharp number detailing. Traditional button-front style with reinforced stitching ensures long-lasting comfort. Fully customizable in colors, typography styles, numbering formats, sponsor prints, and sizes from Youth to 5XL with private labeling and packaging options.",
-      "image": "/products/baseball-jerseys/3.png",
+      "image": "/Products/baseball-jerseys/3.png",
       "category": "baseball-jerseys"
     },
     {
@@ -101,7 +101,7 @@
       "title": "Brewers – Gold/Black Pinstripe Baseball Jersey",
       "slug": "brewers-gold-black-pinstripe-baseball-jersey",
       "description": "Durable lightweight polyester construction built for comfort and long-lasting performance. Advanced sublimation printing delivers classic gold and black pinstripe styling with clear lettering and sharp number definition. Professional button-up design with reinforced seams ensures flexibility and durability. Fully customizable in colors, logos, numbering styles, sponsor graphics, fabric textures, and sizing from Youth to 5XL with private labeling available.",
-      "image": "/products/baseball-jerseys/4.png",
+      "image": "/Products/baseball-jerseys/4.png",
       "category": "baseball-jerseys"
     },
     {
@@ -109,7 +109,7 @@
       "title": "Broncos – Navy/Orange Lightning Baseball Jersey",
       "slug": "broncos-navy-orange-lightning-baseball-jersey",
       "description": "High-performance breathable polyester engineered for superior ventilation and durability. Advanced sublimation printing creates striking navy and orange lightning-style graphics with bold lettering and sharp number detailing. Classic button-front construction ensures a professional team appearance with reinforced stitching for maximum comfort. Fully customizable in colors, typography styles, numbering, sponsor prints, fabric textures, and sizing from Youth to 5XL.",
-      "image": "/products/baseball-jerseys/5.png",
+      "image": "/Products/baseball-jerseys/5.png",
       "category": "baseball-jerseys"
     },
     {
@@ -117,7 +117,7 @@
       "title": "Raptors – Purple/Navy Sleeveless Basketball Jersey",
       "slug": "raptors-purple-navy-sleeveless-basketball-jersey",
       "description": "Lightweight mesh-blend polyester offering maximum airflow and durability during intense play. Advanced sublimation printing delivers vibrant purple and navy graphics with bold mascot detailing and sharp numbering. Designed for athletic mobility with reinforced armholes and smooth inner seams for enhanced comfort. Fully customizable in colors, typography styles, numbering, sponsor prints, fabric textures, and sizing from Youth to 5XL with private labeling options.",
-      "image": "/products/basketball-jerseys/2.png",
+      "image": "/Products/basketball-jerseys/2.png",
       "category": "basketball-jerseys"
     },
     {
@@ -125,7 +125,7 @@
       "title": "Bulldogs – Yellow/Green Sleeveless Basketball Jersey",
       "slug": "bulldogs-yellow-green-sleeveless-basketball-jersey",
       "description": "Breathable performance polyester mesh engineered for flexibility and long-lasting wear. High-definition sublimation printing ensures bright yellow and green graphics with clear number visibility and fade-resistant colors. Built for active performance with reinforced arm openings and smooth interior stitching for comfort. Fully customizable in colors, logo placement, numbering styles, sponsor graphics, fabric textures, and sizes from Youth to 5XL.",
-      "image": "/products/basketball-jerseys/4.png",
+      "image": "/Products/basketball-jerseys/4.png",
       "category": "basketball-jerseys"
     },
     {
@@ -133,7 +133,7 @@
       "title": "Young Grinders – White/Gold Sleeveless Basketball Jersey",
       "slug": "young-grinders-white-gold-sleeveless-basketball-jersey",
       "description": "Premium lightweight polyester mesh designed for superior ventilation and durability. Precision sublimation printing creates clean white and gold styling with bold typography and sharp number detailing. Engineered for unrestricted movement with reinforced armholes and soft inner seams for extended comfort. Fully customizable in colors, typography styles, numbers, sponsor prints, fabric patterns, and sizing from Youth to 5XL.",
-      "image": "/products/basketball-jerseys/5.png",
+      "image": "/Products/basketball-jerseys/5.png",
       "category": "basketball-jerseys"
     },
     {
@@ -141,7 +141,7 @@
       "title": "Savages – Black/Green Sleeveless Basketball Jersey",
       "slug": "savages-black-green-sleeveless-basketball-jersey",
       "description": "High-performance breathable mesh polyester providing excellent airflow and durability. Advanced sublimation printing produces striking black and neon green graphics with bold mascot styling and crisp numbering. Designed for flexibility with reinforced arm openings and smooth inner seams for maximum comfort. Fully customizable in colors, numbering styles, logos, sponsor branding, fabric textures, and sizing from Youth to 5XL.",
-      "image": "/products/basketball-jerseys/3.png",
+      "image": "/Products/basketball-jerseys/3.png",
       "category": "basketball-jerseys"
     },
     {
@@ -149,7 +149,7 @@
       "title": "Lions Life – Navy/Gold Sleeveless Basketball Jersey",
       "slug": "lions-life-navy-gold-sleeveless-basketball-jersey",
       "description": "Durable lightweight mesh polyester construction designed for performance and ventilation. Professional sublimation printing ensures deep navy and gold graphics with sharp numbering and clean detailing. Built for athletic comfort featuring reinforced armholes and smooth interior stitching for long-lasting wear. Fully customizable in colors, typography styles, numbering formats, sponsor logos, fabric textures, and sizing from Youth to 5XL.",
-      "image": "/products/basketball-jerseys/1.png",
+      "image": "/Products/basketball-jerseys/1.png",
       "category": "basketball-jerseys"
     },
     {
@@ -157,7 +157,7 @@
       "title": "Cobras – White/Gray Sleeveless Hoodie Jersey",
       "slug": "cobras-white-gray-sleeveless-hoodie-jersey",
       "description": "Premium lightweight polyester performance fabric with moisture-wicking and quick-dry technology. Breathable mesh panels enhance airflow while stretch construction ensures full mobility. Features fade-resistant sublimated gray splatter graphics with bold team branding and oversized front number. Reinforced stitching and soft inner hood lining provide durability and comfort. Fully customizable with team logo, player name, number, color accents, fabric GSM options, and sizes from Youth to 5XL.",
-      "image": "/products/sleeveless-hoodies/4.png",
+      "image": "/Products/sleeveless-hoodies/4.png",
       "category": "sleeveless-hoodies"
     },
     {
@@ -165,7 +165,7 @@
       "title": "Boltline – Red/Black Pattern Sleeveless Hoodie Jersey",
       "slug": "boltline-red-black-pattern-sleeveless-hoodie-jersey",
       "description": "High-performance interlock polyester engineered for durability and sweat control. Advanced sublimation printing delivers vibrant red and black geometric graphics with long-lasting color retention. Designed with double-stitched seams and flexible side panels for maximum comfort and movement. Ideal for competitive play or streetwear styling. Fully customizable in colors, patterns, sponsor logos, player personalization, neck labels, fabric upgrades, and extended sizing options.",
-      "image": "/products/sleeveless-hoodies/3.png",
+      "image": "/Products/sleeveless-hoodies/3.png",
       "category": "sleeveless-hoodies"
     },
     {
@@ -173,7 +173,7 @@
       "title": "Legends – Yellow/Red Sleeveless Hoodie Jersey",
       "slug": "legends-yellow-red-sleeveless-hoodie-jersey",
       "description": "Breathable athletic polyester fabric with soft-touch finish and moisture management technology for all-game comfort. Features bold yellow and red splash graphics applied through high-definition sublimation for fade resistance. Athletic cut with extended hem and structured hood delivers modern sport appeal. Reinforced arm openings enhance durability. Fully customizable with team name, player number, logo placement, piping colors, fabric weight selection, and private labeling options.",
-      "image": "/products/sleeveless-hoodies/2.png",
+      "image": "/Products/sleeveless-hoodies/2.png",
       "category": "sleeveless-hoodies"
     },
     {
@@ -181,7 +181,7 @@
       "title": "Bluejays – Sky Blue/White Sleeveless Hoodie Jersey",
       "slug": "bluejays-sky-blue-white-sleeveless-hoodie-jersey",
       "description": "Lightweight mesh-blend polyester designed for maximum ventilation and performance durability. Precision sublimation printing ensures vibrant sky-blue and white abstract graphics with crisp numbering and sharp detailing. Built with reinforced armholes and smooth interior seams for irritation-free comfort. Suitable for competitive teams and custom brand collections. Fully customizable in color schemes, typography styles, numbering formats, sponsor prints, fabric textures, and size range from Youth to 5XL.",
-      "image": "/products/sleeveless-hoodies/1.png",
+      "image": "/Products/sleeveless-hoodies/1.png",
       "category": "sleeveless-hoodies"
     },
     {
@@ -189,7 +189,7 @@
       "title": "Pro Elite – White Baseball Pants",
       "slug": "pro-elite-white-baseball-pants",
       "description": "Durable stretch polyester blend engineered for high-performance gameplay and long-lasting wear. Lightweight, breathable fabric with moisture-wicking properties keeps athletes cool and dry. Reinforced double-layer knee panels enhance durability during slides and dives. Elastic waistband with belt loops ensures a secure professional fit. Fully customizable in piping colors, side stripe designs, logo placement, fabric weight options, and sizing from Youth to 5XL.",
-      "image": "/products/baseball-pants/5.png",
+      "image": "/Products/baseball-pants/5.png",
       "category": "baseball-pants"
     },
     {
@@ -197,7 +197,7 @@
       "title": "Pro Elite – Black Baseball Pants",
       "slug": "pro-elite-black-baseball-pants",
       "description": "Premium athletic polyester fabric offering flexibility, breathability, and sweat control for competitive performance. Fade-resistant dye technology maintains deep black tone after repeated washes. Designed with reinforced stitching, articulated knee structure, and secure waistband closure for game-ready durability. Ideal for team uniforms and training wear. Fully customizable with contrast piping, sublimated side panels, logo embroidery, private labeling, and extended size options.",
-      "image": "/products/baseball-pants/2.png",
+      "image": "/Products/baseball-pants/2.png",
       "category": "baseball-pants"
     },
     {
@@ -205,7 +205,7 @@
       "title": "Pro Elite – Gray Baseball Pants",
       "slug": "pro-elite-gray-baseball-pants",
       "description": "High-quality interlock polyester construction delivering lightweight comfort and stretch mobility. Moisture-management fabric supports intense gameplay while maintaining shape retention. Double-stitched seams and reinforced knee areas provide added strength for sliding performance. Clean athletic silhouette with professional finish. Fully customizable in stripe patterns, team branding, color trims, waistband style, fabric upgrades, and complete size range from Youth to 5XL.",
-      "image": "/products/baseball-pants/4.png",
+      "image": "/Products/baseball-pants/4.png",
       "category": "baseball-pants"
     },
     {
@@ -213,7 +213,7 @@
       "title": "Pro Elite – Red Baseball Pants",
       "slug": "pro-elite-red-baseball-pants",
       "description": "Performance-grade polyester blend designed for durability, flexibility, and breathable comfort. Advanced color-lock technology ensures vibrant red tone with long-term fade resistance. Features reinforced knees, flexible waistband construction, and smooth interior finishing for irritation-free wear. Suitable for competitive teams and custom uniform programs. Fully customizable with piping accents, logo placement, sublimation panels, GSM selection, and sizing from Youth to 5XL.",
-      "image": "/products/baseball-pants/3.png",
+      "image": "/Products/baseball-pants/3.png",
       "category": "baseball-pants"
     },
     {
@@ -221,7 +221,7 @@
       "title": "Wildcats – Sky Blue/Navy Sleeveless Hoodie Jersey",
       "slug": "wildcats-sky-blue-navy-sleeveless-hoodie-jersey",
       "description": "Lightweight mesh-blend polyester engineered for superior breathability and long-term durability. High-definition sublimation printing delivers vibrant sky-blue gradients with bold Wildcats typography, panther graphics, and crisp number detailing. Designed for performance mobility with reinforced armholes and precision-stitched seams for enhanced comfort. Fully customizable in colors, typography style, numbering, sponsor prints, fabric texture, and sizing to meet team or brand requirements.",
-      "image": "/products/basketball-styled-jerseys/1.png",
+      "image": "/Products/basketball-styled-jerseys/1.png",
       "category": "basketball-styled-jerseys"
     },
     {
@@ -229,7 +229,7 @@
       "title": "Ghost – White/Red Sleeveless Hoodie Jersey",
       "slug": "ghost-white-red-sleeveless-hoodie-jersey",
       "description": "Premium moisture-wicking polyester mesh providing optimal airflow and lightweight performance. Advanced sublimation technology ensures sharp white base tones with distressed graphic effects and standout number application. Athletic cut construction enhances range of motion, complemented by reinforced arm openings and smooth inner lining. Fully customizable in color schemes, fonts, numbering formats, sponsor placements, fabric options, and custom sizing.",
-      "image": "/products/basketball-styled-jerseys/2.png",
+      "image": "/Products/basketball-styled-jerseys/2.png",
       "category": "basketball-styled-jerseys"
     },
     {
@@ -237,7 +237,7 @@
       "title": "Energy – Neon Green/Black Sleeveless Hoodie Jersey",
       "slug": "energy-neon-green-black-sleeveless-hoodie-jersey",
       "description": "High-performance breathable mesh fabric designed for intense activity and durability. Dynamic sublimation printing produces vibrant neon green splatter graphics with bold artwork and detailed numbering. Ergonomic sleeveless construction allows unrestricted movement, reinforced with durable stitching and soft internal finishing for all-day comfort. Fully customizable in graphic themes, colors, typography, player numbers, branding elements, material weight, and sizing specifications.",
-      "image": "/products/basketball-styled-jerseys/3.png",
+      "image": "/Products/basketball-styled-jerseys/3.png",
       "category": "basketball-styled-jerseys"
     },
     {
@@ -245,7 +245,7 @@
       "title": "Florida Motion – Black/Multicolor Sleeveless Hoodie Jersey",
       "slug": "florida-motion-black-multicolor-sleeveless-hoodie-jersey",
       "description": "Lightweight technical polyester offering enhanced ventilation and sweat management. Precision sublimation captures high-resolution cityscape artwork with striking multicolor accents and bold front branding. Athletic performance fit ensures flexibility, while reinforced armholes and flatlock seams improve durability and reduce friction. Fully customizable in design layouts, logo placements, color palettes, numbering styles, fabric finishes, and tailored sizing.",
-      "image": "/products/basketball-styled-jerseys/4.png",
+      "image": "/Products/basketball-styled-jerseys/4.png",
       "category": "basketball-styled-jerseys"
     },
     {
@@ -253,7 +253,7 @@
       "title": "Elite Atlético Bombers – White/Red/Navy Sleeveless Hoodie Jersey",
       "slug": "elite-atletico-bombers-white-red-navy-sleeveless-hoodie-jersey",
       "description": "Breathable mesh-blend polyester engineered for comfort and structural resilience. Advanced sublimation guarantees crisp white fabric contrast with bold stripe graphics and detailed team branding. Designed with performance-focused arm openings and smooth seam finishing to enhance mobility and reduce irritation. Fully customizable in team colors, typography systems, numbering formats, sponsor integrations, fabric selection, and complete size range.",
-      "image": "/products/basketball-styled-jerseys/5.png",
+      "image": "/Products/basketball-styled-jerseys/5.png",
       "category": "basketball-styled-jerseys"
     },
     {
@@ -261,7 +261,7 @@
       "title": "Friendship – Gold/Navy Sleeveless Hoodie Jersey",
       "slug": "friendship-gold-navy-sleeveless-hoodie-jersey",
       "description": "Durable lightweight polyester mesh optimized for airflow and active wear performance. High-definition sublimation ensures rich gold tones with dynamic splatter graphics and bold varsity-style lettering. Structured sleeveless cut enhances flexibility, supported by reinforced stitching and soft interior seams for extended wear comfort. Fully customizable in color combinations, font styles, numbering design, logo positioning, textile texture, and sizing requirements.",
-      "image": "/products/basketball-styled-jerseys/6.png",
+      "image": "/Products/basketball-styled-jerseys/6.png",
       "category": "basketball-styled-jerseys"
     },
     {
@@ -269,7 +269,7 @@
       "title": "One Nation – Black Pullover Hoodie",
       "slug": "one-nation-black-pullover-hoodie",
       "description": "Premium cotton-blend fleece engineered for warmth, breathability, and long-lasting durability. High-definition print application ensures sharp logo branding with clean contrast against the deep black base. Designed with an ergonomic athletic fit, featuring a double-layer hood, adjustable drawstrings, ribbed cuffs, and reinforced kangaroo pocket stitching for enhanced structure and comfort. Fully customizable in fabric weight, color options, logo placement, print technique, labeling, and complete size range.",
-      "image": "/products/hoodies/1.png",
+      "image": "/Products/hoodies/1.png",
       "category": "hoodies"
     },
     {
@@ -277,7 +277,7 @@
       "title": "One Nation – Red Pullover Hoodie",
       "slug": "one-nation-red-pullover-hoodie",
       "description": "Midweight brushed fleece construction providing thermal insulation with soft-touch interior comfort. Precision printing delivers bold logo graphics with crisp detailing on a vibrant red surface. Structured silhouette with durable rib-knit cuffs and hem ensures shape retention after repeated wear and washing. Equipped with double-stitched seams and functional front pouch pocket. Fully customizable in colorways, branding elements, embroidery options, private labeling, fabric composition, and sizing specifications.",
-      "image": "/products/hoodies/2.png",
+      "image": "/Products/hoodies/2.png",
       "category": "hoodies"
     },
     {
@@ -285,7 +285,7 @@
       "title": "One Nation – Charcoal Grey Pullover Hoodie",
       "slug": "one-nation-charcoal-grey-pullover-hoodie",
       "description": "High-quality cotton-poly blend fleece optimized for comfort, resilience, and everyday performance wear. Advanced logo printing maintains color consistency and sharp typography on the neutral charcoal base. Tailored cut supports mobility while maintaining a clean streetwear profile. Reinforced seams, adjustable hood drawcords, and durable pocket construction enhance structural integrity. Fully customizable in tone variations, print finishes, embellishment methods, GSM selection, trims, and full size grading.",
-      "image": "/products/hoodies/5.png",
+      "image": "/Products/hoodies/5.png",
       "category": "hoodies"
     },
     {
@@ -293,7 +293,7 @@
       "title": "One Nation – Light Grey Pullover Hoodie",
       "slug": "one-nation-light-grey-pullover-hoodie",
       "description": "Soft brushed fleece interior combined with breathable exterior knit for balanced warmth and comfort. Clean, high-resolution logo application ensures strong visual impact against the light neutral base. Designed with a modern athletic fit, ribbed hem and cuffs for retention, and reinforced pouch pocket for daily utility. Double-needle stitching improves durability under active use. Fully customizable in color palettes, logo size and positioning, embroidery or screen print methods, fabric blends, and complete sizing options.",
-      "image": "/products/hoodies/4.png",
+      "image": "/Products/hoodies/4.png",
       "category": "hoodies"
     },
     {
@@ -301,7 +301,7 @@
       "title": "Chiefs – Red/Gold American Football Jersey",
       "slug": "chiefs-red-gold-american-football-jersey",
       "description": "High-performance breathable polyester mesh engineered for durability and ventilation during competitive play. Advanced sublimation printing ensures vibrant red base tones with bold gold number detailing for maximum field visibility. Reinforced shoulder panels and V-neck rib construction enhance structural integrity under impact conditions. Designed with precision stitching and moisture-management properties for game-ready performance. Fully customizable in team colors, numbering style, player name placement, sleeve detailing, fabric weight, and complete size grading.",
-      "image": "/products/football-jerseys/3.png",
+      "image": "/Products/football-jerseys/3.png",
       "category": "football-jerseys"
     },
     {
@@ -309,7 +309,7 @@
       "title": "Chiefs – Royal purple/Gold American Football Jersey",
       "slug": "chiefs-royal-blue-gold-american-football-jersey",
       "description": "Premium lightweight athletic mesh providing optimal airflow and sweat-wicking performance. High-definition sublimation guarantees sharp blue saturation with contrasting gold numbering and clean chest branding. Ergonomic cut supports shoulder mobility, while reinforced seams and stretch panel integration improve durability during high-intensity movement. Structured V-neck collar ensures shape retention throughout repeated use. Fully customizable in color combinations, typography systems, number sizing, sponsor logos, fabric GSM, and tailored fit specifications.",
-      "image": "/products/football-jerseys/2.png",
+      "image": "/Products/football-jerseys/2.png",
       "category": "football-jerseys"
     },
     {
@@ -317,7 +317,7 @@
       "title": "Contras – Green/Black American Football Jersey",
       "slug": "contras-green-black-american-football-jersey",
       "description": "Durable performance polyester designed for resilience and breathability in contact sports environments. Precision sublimation technology delivers bold green gradients with strong black and white number contrast for enhanced on-field readability. Reinforced shoulder yoke and double-stitched panel construction improve strength and longevity. Moisture-wicking interior supports temperature regulation under demanding conditions. Fully customizable in team branding, number format, sleeve trims, collar styling, material composition, and comprehensive sizing options.",
-      "image": "/products/football-jerseys/1.png",
+      "image": "/Products/football-jerseys/1.png",
       "category": "football-jerseys"
     },
     {
@@ -325,7 +325,7 @@
       "title": "Contras – White/Black American Football Jersey",
       "slug": "contras-white-black-american-football-jersey",
       "description": "Lightweight ventilated mesh fabric engineered for professional-level comfort and durability. Advanced sublimation printing ensures crisp white base with high-contrast black numbering and clean team typography. Structured V-neck collar and reinforced arm openings provide stability during gameplay. Athletic fit construction enhances mobility without restricting performance. Fully customizable in logo placement, numbering dimensions, alternate color schemes, fabric thickness, private labeling, and full production size range.",
-      "image": "/products/football-jerseys/4.png",
+      "image": "/Products/football-jerseys/4.png",
       "category": "football-jerseys"
     },
     {
@@ -333,7 +333,7 @@
       "title": "Broncos – Black/Teal Basketball Uniform",
       "slug": "broncos-black-teal-basketball-uniform",
       "description": "High-performance breathable mesh fabric designed for competitive basketball environments. Dynamic sublimation printing features a bold black base with vibrant teal and orange splash graphics for a modern athletic look. Reinforced V-neck collar and durable arm trim ensure long-lasting structure throughout intense gameplay. Lightweight athletic-cut jersey and shorts provide unrestricted mobility and moisture control. Fully customizable including logo placement, player names, numbering size, alternate color variations, fabric weight options, private labeling, and complete size range production.",
-      "image": "/products/basketball-kits/1.png",
+      "image": "/Products/basketball-kits/1.png",
       "category": "basketball-kits"
     },
     {
@@ -341,7 +341,7 @@
       "title": "Laredo RWE – Royal Blue Basketball Uniform",
       "slug": "laredo-rwe-royal-blue-basketball-uniform",
       "description": "Premium ventilated performance fabric engineered for durability and all-game comfort. Clean royal blue body accented with silver side striping and precision sublimated team typography for a professional finish. Structured V-neck collar construction enhances stability while maintaining flexibility. Ergonomic athletic fit maximizes speed, agility, and court movement. Customizable features include team branding, player numbering, side panel designs, fabric thickness options, private labeling, and full sizing availability.",
-      "image": "/products/basketball-kits/2.png",
+      "image": "/Products/basketball-kits/2.png",
       "category": "basketball-kits"
     },
     {
@@ -349,7 +349,7 @@
       "title": "Mighty Raptors – Orange/Green Basketball Uniform",
       "slug": "mighty-raptors-orange-green-basketball-uniform",
       "description": "Advanced moisture-wicking mesh material built for high-intensity basketball performance. Vibrant orange base paired with neon green accents and detailed sublimated graphics delivers standout visual impact. Durable neckline and armhole stitching provide enhanced wear resistance. Coordinated shorts feature gradient dot patterns and reinforced waistband for optimal comfort. Fully customizable with mascot graphics, sponsor logos, numbering styles, alternate colorways, material upgrades, private branding, and inclusive size production.",
-      "image": "/products/basketball-kits/3.png",
+      "image": "/Products/basketball-kits/3.png",
       "category": "basketball-kits"
     },
     {
@@ -357,7 +357,7 @@
       "title": "Bears – White/Green Basketball Uniform",
       "slug": "bears-white-green-basketball-uniform",
       "description": "Professional-grade lightweight basketball set crafted from breathable quick-dry mesh fabric. Crisp white base complemented by deep green typography and minimalist striping for a classic competitive aesthetic. Reinforced V-neck collar and precision-cut arm openings maintain structure during play. Tailored athletic fit ensures enhanced flexibility and comfort on the court. Customization options include team logos, national flag patches, player numbers, alternate trims, fabric weight selection, private labeling, and full size range manufacturing.",
-      "image": "/products/basketball-kits/4.png",
+      "image": "/Products/basketball-kits/4.png",
       "category": "basketball-kits"
     },
     {
@@ -365,7 +365,7 @@
       "title": "ONE Nation IND – White Performance Hoodie",
       "slug": "one-nation-ind-white-performance-hoodie",
       "description": "Premium midweight performance hoodie crafted from soft brushed fleece fabric for everyday comfort and durability. Clean white base highlighted by bold black ONE Nation IND chest graphic with precision screen printing for long-lasting contrast. Adjustable drawstring hood and reinforced ribbed cuffs and hem provide structured fit and shape retention. Spacious kangaroo pocket adds functional utility and warmth. Athletic modern fit suitable for training, travel, and casual wear. Fully customizable with logo placement, alternate color combinations, fabric weight options, private labeling, and complete production size range.",
-      "image": "/products/hoodies/3.png",
+      "image": "/Products/hoodies/3.png",
       "category": "hoodies"
     },
     {
@@ -373,7 +373,7 @@
       "title": "ONE Nation IND – Blue Digital Camo Performance T-Shirt",
       "slug": "one-nation-ind-blue-digital-camo-performance-tshirt",
       "description": "High-performance lightweight polyester fabric engineered for breathability and moisture control. Dynamic blue digital camouflage pattern enhanced with precision sublimated ONE Nation IND chest graphic for long-lasting vibrancy and durability. Reinforced crew neckline maintains structure during training and everyday wear. Athletic modern fit ensures unrestricted movement and comfort. Fully customizable including logo placement, color variations, fabric weight options, private labeling, and complete size range production.",
-      "image": "/products/tshirts/1.png",
+      "image": "/Products/tshirts/1.png",
       "category": "t-shirts"
     },
     {
@@ -381,7 +381,7 @@
       "title": "ONE Nation IND – Green Digital Camo Performance T-Shirt",
       "slug": "one-nation-ind-green-digital-camo-performance-tshirt",
       "description": "Premium moisture-wicking performance fabric designed for active training and team wear. Bold green digital camouflage base combined with sharp sublimated ONE Nation IND branding for a professional athletic appearance. Durable ribbed crew collar and precision stitching enhance long-term wear resistance. Ergonomic athletic cut promotes mobility and comfort. Customization options include alternate camouflage shades, logo sizing, private branding, fabric upgrades, and full production sizing.",
-      "image": "/products/tshirts/2.png",
+      "image": "/Products/tshirts/2.png",
       "category": "t-shirts"
     },
     {
@@ -389,7 +389,7 @@
       "title": "ONE Nation IND – Navy Digital Camo Performance T-Shirt",
       "slug": "one-nation-ind-navy-digital-camo-performance-tshirt",
       "description": "Advanced quick-dry mesh material built for high-intensity activity and everyday athletic wear. Navy blue digital camouflage design paired with crisp sublimated ONE Nation IND front graphic for maximum visual impact. Structured crew neck construction ensures consistent shape retention. Lightweight athletic fit provides flexibility and ventilation. Fully customizable with team logos, alternate camo colorways, fabric thickness selection, private labeling, and complete size range manufacturing.",
-      "image": "/products/tshirts/3.png",
+      "image": "/Products/tshirts/3.png",
       "category": "t-shirts"
     },
     {
@@ -397,7 +397,7 @@
       "title": "Cowboys – Royal Blue Full-Button Baseball Jersey",
       "slug": "cowboys-royal-blue-full-button-baseball-jersey",
       "description": "Professional-grade baseball jersey crafted from lightweight, breathable performance polyester for durability and all-game comfort. Vibrant royal blue base highlighted with red and white piping details and bold Cowboys script across the chest. Traditional full-button front closure with reinforced placket ensures authentic on-field styling and structure. Athletic fit construction enhances mobility while maintaining a clean silhouette. Fully customizable including team name, player names, numbering, piping colors, fabric weight options, private labeling, and complete size range production.",
-      "image": "/products/sports-shirts/3.png",
+      "image": "/Products/sports-shirts/3.png",
       "category": "sports-shirts"
     },
     {
@@ -405,7 +405,7 @@
       "title": "Cowboys – White Full-Button Baseball Jersey",
       "slug": "cowboys-white-full-button-baseball-jersey",
       "description": "High-performance moisture-wicking baseball jersey engineered for competitive play and team presentation. Crisp white body accented with red and blue piping and classic Cowboys front script for a timeless athletic look. Structured collar and durable button-front closure provide long-lasting wear resistance. Lightweight breathable fabric ensures ventilation during extended gameplay. Customizable with logos, player personalization, alternate trim colors, fabric upgrades, private branding, and full production sizing.",
-      "image": "/products/sports-shirts/2.png",
+      "image": "/Products/sports-shirts/2.png",
       "category": "sports-shirts"
     },
     {
@@ -413,7 +413,7 @@
       "title": "Cowboys – Black Full-Button Baseball Jersey",
       "slug": "cowboys-black-full-button-baseball-jersey",
       "description": "Premium athletic baseball jersey constructed from advanced quick-dry performance fabric for maximum comfort and durability. Bold black base combined with contrasting red and blue piping and prominent Cowboys chest script delivers strong visual impact. Reinforced stitching along sleeves and placket enhances structural integrity. Tailored athletic cut supports flexibility and range of motion. Fully customizable in color schemes, team branding, numbering styles, private labeling, fabric thickness, and complete size availability.",
-      "image": "/products/sports-shirts/1.png",
+      "image": "/Products/sports-shirts/1.png",
       "category": "sports-shirts"
     },
     {
@@ -421,7 +421,7 @@
       "title": "Cowboys – Grey Full-Button Baseball Jersey",
       "slug": "cowboys-grey-full-button-baseball-jersey",
       "description": "Durable lightweight baseball jersey designed for professional and recreational team use. Modern grey base complemented by red and blue accent piping and signature Cowboys script across the chest for a refined athletic appearance. Traditional button-down front and structured collar provide authentic diamond-ready styling. Breathable moisture-control fabric enhances performance in warm conditions. Fully customizable with player names, numbers, alternate trim options, logo placement, private branding, and complete size range manufacturing.",
-      "image": "/products/sports-shirts/4.png",
+      "image": "/Products/sports-shirts/4.png",
       "category": "sports-shirts"
     }
   ]

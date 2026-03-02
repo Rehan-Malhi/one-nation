@@ -11,7 +11,7 @@ const PRODUCTS = [
     desc: "Custom sublimation • Pro athletic fit",
     meta: "MOQ 50 • 180–220 GSM • 10–14 Days",
     href: "/products/football",
-    image: "/products/basketball-kits/1.png",
+    image: "/Products/basketball-kits/1.png",
     badge: "Most Ordered",
   },
   {
@@ -19,7 +19,7 @@ const PRODUCTS = [
     title: "Hoodies",
     desc: "Heavy GSM • Embroidery ready",
     meta: "MOQ 50 • 300 GSM • 12–15 Days",
-    href: "/products/hoodies",
+    href: "/Products/hoodies",
     image: "/products/hoodies/1.png",
   },
   {
@@ -27,7 +27,7 @@ const PRODUCTS = [
     title: "Basketball Styled Jerseys",
     desc: "Comfort stretch • Team sets",
     meta: "MOQ 50 • 220 GSM • 10–12 Days",
-    href: "/products/basketball-styled-jerseys",
+    href: "/Products/basketball-styled-jerseys",
     image: "/products/basketball-styled-jerseys/3.png",
   },
   {
@@ -35,7 +35,7 @@ const PRODUCTS = [
     title: "Football Jerseys",
     desc: "Breathable mesh • Fast delivery",
     meta: "MOQ 50 • 160–180 GSM • 7–10 Days",
-    href: "/products/football-jerseys",
+    href: "/Products/football-jerseys",
     image: "/products/football-jerseys/1.png",
   },
 ];
