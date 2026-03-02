@@ -8,10 +8,10 @@ import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 
 const ITEMS = [
-  { href: "/Products/baseball-jerseys", img: "/products/baseball-jerseys/1.png", title: "Baseball Jerseys" },
-  { href: "/Products/basketball-jerseys", img: "/products/basketball-jerseys/1.png", title: "Basketball Jerseys" },
-  { href: "/Products/basketball-kits", img: "/products/basketball-kits/1.png", title: "Basketball Kits" },
-  { href: "/products/basketball-styled-jerseys", img: "/products/basketball-styled-jerseys/1.png", title: "Basketball Styled Jerseys" },
+  { href: "/Products/baseball-jerseys", img: "/Products/baseball-jerseys/1.png", title: "Baseball Jerseys" },
+  { href: "/Products/basketball-jerseys", img: "/Products/basketball-jerseys/1.png", title: "Basketball Jerseys" },
+  { href: "/Products/basketball-kits", img: "/Products/basketball-kits/1.png", title: "Basketball Kits" },
+  { href: "/products/basketball-styled-jerseys", img: "/Products/basketball-styled-jerseys/1.png", title: "Basketball Styled Jerseys" },
   { href: "/products/football-jerseys", img: "/products/football-jerseys/1.png", title: "Football Jerseys" },
   { href: "/products/hoodies", img: "/products/hoodies/1.png", title: "Hoodies" },
   { href: "/products/no-slv-hoodies", img: "/products/no-slv-hoodies/1.png", title: "no-sleeve Hoodies" },
