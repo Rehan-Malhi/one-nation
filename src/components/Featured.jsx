@@ -7,11 +7,11 @@ import Link from "next/link";
 const PRODUCTS = [
   {
     id: "1",
-    title: "Football Kits",
+    title: "Basketball Kits",
     desc: "Custom sublimation • Pro athletic fit",
     meta: "MOQ 50 • 180–220 GSM • 10–14 Days",
     href: "/products/football",
-    image: "/mock.png",
+    image: "/products/basketball-kits/1.png",
     badge: "Most Ordered",
   },
   {
@@ -20,24 +20,23 @@ const PRODUCTS = [
     desc: "Heavy GSM • Embroidery ready",
     meta: "MOQ 50 • 300 GSM • 12–15 Days",
     href: "/products/hoodies",
-    image: "/mock.png",
-    badge: "Bulk Favorite",
+    image: "/products/hoodies/1.png",
   },
   {
     id: "3",
-    title: "Tracksuits",
+    title: "Basketball Styled Jerseys",
     desc: "Comfort stretch • Team sets",
     meta: "MOQ 50 • 220 GSM • 10–12 Days",
-    href: "/products/tracksuits",
-    image: "/mock.png",
+    href: "/products/basketball-styled-jerseys",
+    image: "/products/basketball-styled-jerseys/3.png",
   },
   {
     id: "4",
-    title: "Soccer Uniforms",
+    title: "Football Jerseys",
     desc: "Breathable mesh • Fast delivery",
     meta: "MOQ 50 • 160–180 GSM • 7–10 Days",
-    href: "/products/soccer-uniforms",
-    image: "/mock.png",
+    href: "/products/football-jerseys",
+    image: "/products/football-jerseys/1.png",
   },
 ];
 
@@ -70,16 +69,16 @@ export default function Featured() {
               className="group relative overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               {/* IMAGE */}
-              <div className="relative h-[360px] w-full overflow-hidden">
+              <div className="relative h-[460px] w-full overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                  className="object-contain transition-transform duration-500 group-hover:scale-[1.05]"
                 />
 
                 {item.badge && (
-                  <div className="absolute left-4 top-4 rounded-full border border-black/10 bg-white px-3 py-1 text-xs font-semibold text-slate-900 backdrop-blur">
+                  <div className="absolute right-2 top-2 rounded-full border border-black/10 bg-white px-3 py-1 text-xs font-semibold text-slate-900 backdrop-blur">
                     {item.badge}
                   </div>
                 )}
@@ -87,22 +86,29 @@ export default function Featured() {
 
               {/* CONTENT */}
               <div className="p-5">
-                <h3 className="text-lg font-extrabold text-slate-900">
+                <h3 className="text-xl font-bold text-slate-900">
                   {item.title}
                 </h3>
 
-                <p className="mt-1 text-sm text-slate-600">{item.desc}</p>
+                <p className="mt-3 text-sm text-slate-600">{item.desc}</p>
 
-                <p className="mt-3 text-xs font-medium text-slate-500">
+                <p className="mt-2 text-xs font-medium text-slate-500">
                   {item.meta}
                 </p>
-
+               <div className="flex gap-2">
                 <Link
                   href={item.href}
                   className="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-4 py-3 text-sm font-bold text-white transition hover:bg-black"
-                >
+                  >
                  Get Quote
                 </Link>
+                <Link
+                  href={item.href}
+                  className="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-red-600 px-4 py-3 text-sm font-bold text-white transition hover:bg-red-500"
+                  >
+                 View all
+                </Link>
+                  </div>
               </div>
             </div>
           ))}

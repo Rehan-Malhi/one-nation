@@ -6,7 +6,7 @@ import Image from "next/image";
 import { FiSearch, FiMenu, FiChevronDown, FiX } from "react-icons/fi";
 
 // ✅ Import JS data (not JSON)
-import productsData from "@/data/products";
+import productsData from "@/data/products.json";
 
 function money(n) {
   if (typeof n !== "number") return "";
@@ -27,26 +27,27 @@ export default function Navbar() {
 
   // ✅ Normalize categories from products.js
   const ALL_CATEGORIES = useMemo(() => {
-    const raw = productsData?.categories ?? [];
-    return raw.map((c) => ({
-      title: c.title,
-      href: c.href || "#",
-      featured: Boolean(c.featured),
-      image: c.image || "/mock.png",
-      desc: c.desc || "",
-      startingPrice:
-        typeof c.startingPrice === "number" ? c.startingPrice : undefined,
-      items: Array.isArray(c.items)
-        ? c.items.map((it) => ({
-          label: it.label,
-          href: it.href || "#",
-          image: it.image || "/mock.png",
-          desc: it.desc || "",
-          price: typeof it.price === "number" ? it.price : undefined,
+
+    const categories = productsData?.categories ?? []
+    const products = productsData?.products ?? []
+
+    return categories.map(cat => ({
+
+      title: cat.title,
+      slug: cat.slug,
+
+      items: products
+        .filter(p => p.category === cat.slug)
+        .map(p => ({
+
+          label: p.title,
+          href: `/products/${cat.slug}/${p.slug}`
+
         }))
-        : [],
-    }));
-  }, []);
+
+    }))
+
+  }, [])
 
   // ✅ Navbar shows only 5 categories (featured preferred)
   const NAV_CATEGORIES = useMemo(() => {
@@ -157,202 +158,89 @@ export default function Navbar() {
                 );
               }
 
-              // ✅ Products dropdown (1 column + nested submenu)
+              // ✅ SIMPLE PRODUCTS DROPDOWN
               return (
                 <div
                   key={item}
                   className="relative"
                   onMouseEnter={() => setProductsOpen(true)}
-                  onMouseLeave={() => {
-                    setProductsOpen(false);
-                    setActiveCat(null);
-                  }}
                 >
+
                   <button
                     type="button"
-                    className="relative flex items-center gap-2 pb-1 text-[14px] hover:cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full"
-                    aria-haspopup="menu"
-                    aria-expanded={productsOpen}
-                    onClick={() => setProductsOpen((v) => !v)}
+                    className="flex items-center gap-2 pb-1 text-[14px]"
                   >
-                    PRODUCTS <FiChevronDown className="opacity-90" />
+                    PRODUCTS <FiChevronDown />
                   </button>
 
-                  {/* hover bridge */}
                   {productsOpen && (
-                    <div
-                      className="absolute left-0 top-full h-[14px] w-[760px]"
-                      onMouseEnter={() => setProductsOpen(true)}
-                    />
-                  )}
 
-                  {/* Dropdown */}
-                  {productsOpen && (
                     <div
-                      className={["absolute left-0 top-[calc(100%+14px)] w-[760px] overflow-hidden rounded-2xl", "border border-white/10 bg-[#0b0b0b]/90 text-white shadow-2xl backdrop-blur-xl", "origin-top-left animate-[navDrop_160ms_ease-out]",
-                      ].join(" ")}
-                      style={{ zIndex: 60 }}
+                      className="absolute left-0 top-full mt-2 flex"
                       onMouseEnter={() => setProductsOpen(true)}
+                      onMouseLeave={() => setProductsOpen(false)}
                     >
-                      <div className="grid grid-cols-[1fr_1.25fr]">
-                        {/* LEFT: 1 column categories (5) */}
-                        <div className="border-r border-white/10 p-3">
-                          <div className="flex items-center justify-between px-2 pb-2">
-                            <p className="text-xs tracking-widest text-white/60">
-                              CATEGORIES
-                            </p>
-                            <Link
-                              href="/products"
-                              className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] text-white/80 hover:bg-white/10"
+
+                      {/* Categories */}
+                      <div className="w-64 bg-red-800 border border-white/20 rounded-l-md shadow-lg">
+
+                        <ul>
+
+                          {ALL_CATEGORIES.map((cat) => (
+
+                            <li
+                              key={cat.slug}
+                              onMouseEnter={() => setActiveCat(cat)}
+                              className="cursor-pointer"
                             >
-                              View All
-                            </Link>
-                          </div>
 
-                          <ul className="space-y-1">
-                            {NAV_CATEGORIES.map((cat) => {
-                              const active = activeCat?.title === cat.title;
-
-                              return (
-                                <li key={cat.title}>
-                                  <button
-                                    type="button"
-                                    className={[
-                                      "flex w-full cursor-pointer items-center justify-between rounded-xl px-3 py-2 text-left transition",
-                                      active ? "bg-white/10" : "hover:bg-white/5",
-                                    ].join(" ")}
-                                    onMouseEnter={() => setActiveCat(cat)}
-                                    onFocus={() => setActiveCat(cat)}
-                                    onClick={() => setActiveCat(cat)}
-                                  >
-                                    <span className="flex items-center gap-3">
-                                      <span className="relative h-8 w-8 overflow-hidden rounded-lg border border-white/10">
-                                        <Image
-                                          src={cat.image}
-                                          alt={cat.title}
-                                          fill
-                                          className="object-cover"
-                                          sizes="32px"
-                                        />
-                                      </span>
-                                      <span className="text-sm">{cat.title}</span>
-                                    </span>
-
-                                    <span className="text-right">
-                                      <span className="block text-[11px] text-white/70">
-                                        {(cat.items ?? []).length} items
-                                      </span>
-                                      {typeof cat.startingPrice === "number" ? (
-                                        <span className="block text-[11px] text-white/60">
-                                          From {money(cat.startingPrice)}
-                                        </span>
-                                      ) : null}
-                                    </span>
-                                  </button>
-                                </li>
-                              );
-                            })}
-                          </ul>
-
-                          <div className="mt-3 rounded-xl border border-white/10 bg-white/5 p-3">
-                            <p className="text-xs tracking-widest text-white/60">
-                              QUICK
-                            </p>
-                            <div className="mt-2 grid grid-cols-2 gap-2">
                               <Link
-                                href="/get-a-quote"
-                                className="rounded-xl bg-white/10 px-3 py-2 text-xs hover:bg-white/15"
+                                href={`/products/${cat.slug}`}
+                                className="block px-4 py-3 text-sm text-white hover:bg-red-700"
                               >
-                                Get a Quote
+
+                                {cat.title}
+
                               </Link>
-                              <Link
-                                href="/3d-editor"
-                                className="rounded-xl bg-white/10 px-3 py-2 text-xs hover:bg-white/15"
-                              >
-                                3D Editor
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
 
-                        {/* RIGHT: nested submenu (8 items) */}
-                        <div className="p-3">
-                          <div className="mb-2 flex items-center justify-between px-2">
-                            <p className="text-xs tracking-widest text-white/60">
-                              {activeCat ? activeCat.title.toUpperCase() : "PRODUCTS"}
-                            </p>
+                            </li>
 
-                            {activeCat?.href && (
-                              <Link
-                                href={activeCat.href}
-                                className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] text-white/80 hover:bg-white/10"
-                              >
-                                View {activeCat.title}
-                              </Link>
-                            )}
-                          </div>
+                          ))}
 
-                          <div className="mb-3 px-2">
-                            {activeCat?.desc ? (
-                              <p className="text-[12px] text-white/70">
-                                {activeCat.desc}
-                              </p>
-                            ) : null}
-                          </div>
+                        </ul>
 
-                          {/* subtle crossfade on change */}
-                          <div
-                            key={activeCat?.title || "none"}
-                            className="animate-[fadeIn_140ms_ease-out]"
-                          >
-                            {activeCat ? (
-                              <div className="grid grid-cols-1 gap-1">
-                                {(activeCat.items ?? []).slice(0, 8).map((it) => (
-                                  <Link
-                                    key={it.href}
-                                    href={it.href}
-                                    className="flex items-center justify-between rounded-xl px-3 py-2 text-sm text-white/90 transition hover:bg-white/10"
-                                  >
-                                    <span className="flex items-center gap-3">
-                                      <span className="relative h-8 w-8 overflow-hidden rounded-lg border border-white/10">
-                                        <Image
-                                          src={it.image}
-                                          alt={it.label}
-                                          fill
-                                          className="object-cover"
-                                          sizes="32px"
-                                        />
-                                      </span>
-                                      <span>{it.label}</span>
-                                    </span>
-
-                                    {typeof it.price === "number" ? (
-                                      <span className="text-[12px] font-semibold text-white/70">
-                                        {money(it.price)}
-                                      </span>
-                                    ) : null}
-                                  </Link>
-                                ))}
-                              </div>
-                            ) : (
-                              <div className="rounded-xl border border-white/10 bg-white/5 p-4 text-sm text-white/70">
-                                Hover a category to see items.
-                              </div>
-                            )}
-                          </div>
-
-                          <div className="mt-3 flex justify-end px-2">
-                            <Link
-                              href="/products"
-                              className="text-xs text-white/70 hover:text-white"
-                            >
-                              View all categories →
-                            </Link>
-                          </div>
-                        </div>
                       </div>
+
+                      {/* Products */}
+                      <div className="w-64 bg-red-800 border border-white/20 rounded-r-md shadow-lg">
+
+                        <ul>
+
+                          {activeCat?.items?.map((p) => (
+
+                            <li key={p.label}>
+
+                              <Link
+                                href={p.href}
+                                className="block px-4 py-3 text-sm text-white hover:bg-red-700"
+                              >
+
+                                {p.label}
+
+                              </Link>
+
+                            </li>
+
+                          ))}
+
+                        </ul>
+
+                      </div>
+
                     </div>
+
                   )}
+
                 </div>
               );
             })}
@@ -369,201 +257,201 @@ export default function Navbar() {
             </Link>
             <div className="mx-4 w-1 bg-white self-stretch"></div>
             <div>
-              <h1 className={`lg:text-2xl text-md font-extrabold font-poppins ${isShrunk? "hidden" : ""}`}>One Nation Industry</h1>
-            <h1 className={`lg:text-xl text-md font-bold text-center italic`}>Join The Nation</h1>
-        </div>
-      </div>
-
-      {/* RIGHT – ACTIONS */}
-      <div className="flex flex-1 items-center justify-end gap-3">
-        <button
-          aria-label="Search"
-          className={`hidden sm:flex ${btnSize} cursor-pointer items-center justify-center rounded-full border border-white/30 bg-white/10 text-white transition hover:bg-white/20`}
-        >
-          <FiSearch size={18} />
-        </button>
-
-        <button
-          aria-label="Menu"
-          className={`flex ${btnSize} items-center justify-center rounded-full border border-white/30 bg-white/10 text-white transition hover:bg-white/20 md:hidden`}
-          onClick={() => setMobileOpen(true)}
-        >
-          <FiMenu size={20} />
-        </button>
-      </div>
-    </div >
-      </header >
-
-    {/* ✅ MOBILE OVERLAY MENU (scrollable) */ }
-  {
-    mobileOpen && (
-      <div className="fixed inset-0 z-99 md:hidden">
-        {/* Backdrop */}
-        <button
-          aria-label="Close menu overlay"
-          className="absolute inset-0 bg-black/50"
-          onClick={() => setMobileOpen(false)}
-        />
-
-        <div className="absolute inset-x-0 top-0 h-screen bg-red-800">
-          {/* Top bar */}
-          <div className="flex items-center justify-between border-b border-white/10 px-4 py-4">
-            <div className="w-40">
-              <img
-                src="/logo.png"
-                alt="One Nation Industry Logo"
-                className="w-full object-contain"
-              />
+              <h1 className={`lg:text-2xl text-md font-extrabold font-poppins ${isShrunk ? "hidden" : ""}`}>One Nation Industry</h1>
+              <h1 className={`lg:text-xl text-md font-bold text-center italic`}>Join The Nation</h1>
             </div>
+          </div>
+
+          {/* RIGHT – ACTIONS */}
+          <div className="flex flex-1 items-center justify-end gap-3">
+            <button
+              aria-label="Search"
+              className={`hidden sm:flex ${btnSize} cursor-pointer items-center justify-center rounded-full border border-white/30 bg-white/10 text-white transition hover:bg-white/20`}
+            >
+              <FiSearch size={18} />
+            </button>
 
             <button
-              aria-label="Close menu"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white hover:bg-white/20"
-              onClick={() => setMobileOpen(false)}
+              aria-label="Menu"
+              className={`flex ${btnSize} items-center justify-center rounded-full border border-white/30 bg-white/10 text-white transition hover:bg-white/20 md:hidden`}
+              onClick={() => setMobileOpen(true)}
             >
-              <FiX size={20} />
+              <FiMenu size={20} />
             </button>
           </div>
+        </div >
+      </header >
 
-          {/* Scrollable content */}
-          <div className="h-[calc(100vh-73px)] overflow-y-auto overscroll-contain px-4 py-4">
-            <div className="flex flex-col gap-2 text-sm uppercase tracking-wider text-white/90">
-              <Link
-                href="#"
-                className="rounded-xl border border-white/10 bg-white/5 px-4 py-3"
-                onClick={() => setMobileOpen(false)}
-              >
-                About
-              </Link>
+      {/* ✅ MOBILE OVERLAY MENU (scrollable) */}
+      {
+        mobileOpen && (
+          <div className="fixed inset-0 z-99 md:hidden">
+            {/* Backdrop */}
+            <button
+              aria-label="Close menu overlay"
+              className="absolute inset-0 bg-black/50"
+              onClick={() => setMobileOpen(false)}
+            />
 
-              {/* ✅ Products (only 5 categories + each nested 8 items) */}
-              <div className="rounded-xl border border-white/10 bg-white/5">
-                <div className="flex items-center justify-between px-4 py-3">
-                  <span>Products</span>
+            <div className="absolute inset-x-0 top-0 h-screen bg-red-800">
+              {/* Top bar */}
+              <div className="flex items-center justify-between border-b border-white/10 px-4 py-4">
+                <div className="w-40">
+                  <img
+                    src="/logo.png"
+                    alt="One Nation Industry Logo"
+                    className="w-full object-contain"
+                  />
+                </div>
+
+                <button
+                  aria-label="Close menu"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white hover:bg-white/20"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  <FiX size={20} />
+                </button>
+              </div>
+
+              {/* Scrollable content */}
+              <div className="h-[calc(100vh-73px)] overflow-y-auto overscroll-contain px-4 py-4">
+                <div className="flex flex-col gap-2 text-sm uppercase tracking-wider text-white/90">
                   <Link
-                    href="/products"
-                    className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] text-white/90"
+                    href="#"
+                    className="rounded-xl border border-white/10 bg-white/5 px-4 py-3"
                     onClick={() => setMobileOpen(false)}
                   >
-                    View All
+                    About
                   </Link>
-                </div>
 
-                <div className="px-3 pb-3">
-                  <div className="grid gap-2">
-                    {NAV_CATEGORIES.map((cat) => (
-                      <details
-                        key={cat.title}
-                        className="rounded-xl border border-white/10 bg-white/5"
+                  {/* ✅ Products (only 5 categories + each nested 8 items) */}
+                  <div className="rounded-xl border border-white/10 bg-white/5">
+                    <div className="flex items-center justify-between px-4 py-3">
+                      <span>Products</span>
+                      <Link
+                        href="/products"
+                        className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] text-white/90"
+                        onClick={() => setMobileOpen(false)}
                       >
-                        <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-3 py-3">
-                          <span className="flex items-center gap-3">
-                            <span className="relative h-9 w-9 overflow-hidden rounded-lg border border-white/10">
-                              <Image
-                                src={cat.image}
-                                alt={cat.title}
-                                fill
-                                className="object-cover"
-                                sizes="36px"
-                              />
-                            </span>
-                            <span className="text-[13px]">{cat.title}</span>
-                          </span>
+                        View All
+                      </Link>
+                    </div>
 
-                          <span className="flex items-center gap-3">
-                            {typeof cat.startingPrice === "number" ? (
-                              <span className="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white/90">
-                                From {money(cat.startingPrice)}
-                              </span>
-                            ) : null}
-                            <FiChevronDown className="opacity-90" />
-                          </span>
-                        </summary>
-
-                        <div className="px-2 pb-2">
-                          {(cat.items ?? []).slice(0, 8).map((it) => (
-                            <Link
-                              key={it.href}
-                              href={it.href}
-                              className="flex items-center justify-between rounded-lg px-3 py-2 text-[13px] text-white/90 hover:bg-white/10"
-                              onClick={() => setMobileOpen(false)}
-                            >
+                    <div className="px-3 pb-3">
+                      <div className="grid gap-2">
+                        {NAV_CATEGORIES.map((cat) => (
+                          <details
+                            key={cat.title}
+                            className="rounded-xl border border-white/10 bg-white/5"
+                          >
+                            <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-3 py-3">
                               <span className="flex items-center gap-3">
-                                <span className="relative h-8 w-8 overflow-hidden rounded-lg border border-white/10">
+                                <span className="relative h-9 w-9 overflow-hidden rounded-lg border border-white/10">
                                   <Image
-                                    src={it.image}
-                                    alt={it.label}
+                                    src={cat.image}
+                                    alt={cat.title}
                                     fill
                                     className="object-cover"
-                                    sizes="32px"
+                                    sizes="36px"
                                   />
                                 </span>
-                                {it.label}
+                                <span className="text-[13px]">{cat.title}</span>
                               </span>
 
-                              {typeof it.price === "number" ? (
-                                <span className="text-[12px] font-semibold text-white/70">
-                                  {money(it.price)}
-                                </span>
-                              ) : null}
-                            </Link>
-                          ))}
+                              <span className="flex items-center gap-3">
+                                {typeof cat.startingPrice === "number" ? (
+                                  <span className="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white/90">
+                                    From {money(cat.startingPrice)}
+                                  </span>
+                                ) : null}
+                                <FiChevronDown className="opacity-90" />
+                              </span>
+                            </summary>
 
-                          <div className="px-2 pb-2 pt-1">
-                            <Link
-                              href={cat.href || "/products"}
-                              className="block rounded-lg px-3 py-2 text-[12px] text-white/70 hover:bg-white/10"
-                              onClick={() => setMobileOpen(false)}
-                            >
-                              View {cat.title} →
-                            </Link>
-                          </div>
-                        </div>
-                      </details>
-                    ))}
+                            <div className="px-2 pb-2">
+                              {(cat.items ?? []).slice(0, 8).map((it) => (
+                                <Link
+                                  key={it.href}
+                                  href={it.href}
+                                  className="flex items-center justify-between rounded-lg px-3 py-2 text-[13px] text-white/90 hover:bg-white/10"
+                                  onClick={() => setMobileOpen(false)}
+                                >
+                                  <span className="flex items-center gap-3">
+                                    <span className="relative h-8 w-8 overflow-hidden rounded-lg border border-white/10">
+                                      <Image
+                                        src={it.image}
+                                        alt={it.label}
+                                        fill
+                                        className="object-cover"
+                                        sizes="32px"
+                                      />
+                                    </span>
+                                    {it.label}
+                                  </span>
+
+                                  {typeof it.price === "number" ? (
+                                    <span className="text-[12px] font-semibold text-white/70">
+                                      {money(it.price)}
+                                    </span>
+                                  ) : null}
+                                </Link>
+                              ))}
+
+                              <div className="px-2 pb-2 pt-1">
+                                <Link
+                                  href={cat.href || "/products"}
+                                  className="block rounded-lg px-3 py-2 text-[12px] text-white/70 hover:bg-white/10"
+                                  onClick={() => setMobileOpen(false)}
+                                >
+                                  View {cat.title} →
+                                </Link>
+                              </div>
+                            </div>
+                          </details>
+                        ))}
+                      </div>
+                    </div>
                   </div>
+
+                  <Link
+                    href="#"
+                    className="rounded-xl border border-white/10 bg-white/5 px-4 py-3"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    Team Store
+                  </Link>
+                  <Link
+                    href="#"
+                    className="rounded-xl border border-white/10 bg-white/5 px-4 py-3"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    Support
+                  </Link>
+                  <Link
+                    href="#"
+                    className="rounded-xl border border-white/10 bg-white/5 px-4 py-3"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    Contact
+                  </Link>
+
+                  <div className="mt-4 rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-xs tracking-widest text-white/60">
+                      © {new Date().getFullYear()} One Nation Industry
+                    </p>
+                    <p className="mt-1 text-[12px] normal-case tracking-normal text-white/70">
+                      Showing <span className="text-white/90">5 featured</span> categories here.
+                      Full list is on <span className="text-white/90">/products</span>.
+                    </p>
+                  </div>
+
+                  <div className="h-6" />
                 </div>
               </div>
-
-              <Link
-                href="#"
-                className="rounded-xl border border-white/10 bg-white/5 px-4 py-3"
-                onClick={() => setMobileOpen(false)}
-              >
-                Team Store
-              </Link>
-              <Link
-                href="#"
-                className="rounded-xl border border-white/10 bg-white/5 px-4 py-3"
-                onClick={() => setMobileOpen(false)}
-              >
-                Support
-              </Link>
-              <Link
-                href="#"
-                className="rounded-xl border border-white/10 bg-white/5 px-4 py-3"
-                onClick={() => setMobileOpen(false)}
-              >
-                Contact
-              </Link>
-
-              <div className="mt-4 rounded-2xl border border-white/10 bg-white/5 p-4">
-                <p className="text-xs tracking-widest text-white/60">
-                  © {new Date().getFullYear()} One Nation Industry
-                </p>
-                <p className="mt-1 text-[12px] normal-case tracking-normal text-white/70">
-                  Showing <span className="text-white/90">5 featured</span> categories here.
-                  Full list is on <span className="text-white/90">/products</span>.
-                </p>
-              </div>
-
-              <div className="h-6" />
             </div>
           </div>
-        </div>
-      </div>
-    )
-  }
+        )
+      }
     </>
   );
 }

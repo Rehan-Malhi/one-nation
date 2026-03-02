@@ -165,9 +165,9 @@ export default function Hero() {
               Star Order
             </Link>
 
-            <button className="hidden sm:inline-flex cursor-pointer items-center gap-2 rounded-full px-[1.9rem] py-3 text-[0.95rem] font-semibold uppercase tracking-[0.14em] text-gray-600 border border-slate-400/60 bg-transparent transition [transition-property:transform,box-shadow,background,color,border-color] duration-150 hover:-translate-y-[1px] hover:border-gray-600 hover:text-white hover:shadow-[0_18px_40px_rgba(8,47,73,0.9)] hover:bg-gray-600">
+            <Link href={"/products"} className="hidden sm:inline-flex cursor-pointer items-center gap-2 rounded-full px-[1.9rem] py-3 text-[0.95rem] font-semibold uppercase tracking-[0.14em] text-gray-600 border border-slate-400/60 bg-black transition [transition-property:transform,box-shadow,background,color,border-color] duration-150 hover:-translate-y-[1px] hover:border-gray-600 hover:text-white hover:shadow-[0_18px_40px_rgba(8,47,73,0.9)] hover:bg-gray-600">
               View Products
-            </button>
+            </Link>
 
           </div>
         </div>

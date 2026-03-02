@@ -8,14 +8,15 @@ import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 
 const ITEMS = [
-  { href: "/products/football", img: "/logo.png", title: "Football" },
-  { href: "/products/soccer-uniforms", img: "/components/soccer.png", title: "Soccer Uniforms" },
-  { href: "/products/football-gloves", img: "/components/gloves.png", title: "Football Gloves" },
-  { href: "/products/helmet-decals", img: "/components/helmet.png", title: "Helmet Decals" },
-  { href: "/products/football-cleats", img: "/components/cleats.png", title: "Football Cleats" },
-  { href: "/products/cheerleading", img: "/components/cheer.png", title: "Cheerleading" },
-  { href: "/products/basketball", img: "/components/basketball.png", title: "Basketball" },
-  { href: "/products/baseball", img: "/components/baseball.png", title: "Baseball" },
+  { href: "/products/baseball-jerseys", img: "/products/baseball-jerseys/1.png", title: "Baseball Jerseys" },
+  { href: "/products/basketball-jerseys", img: "/products/basketball-jerseys/1.png", title: "Basketball Jerseys" },
+  { href: "/products/basketball-kits", img: "/products/basketball-kits/1.png", title: "Basketball Kits" },
+  { href: "/products/basketball-styled-jerseys", img: "/products/basketball-styled-jerseys/1.png", title: "Basketball Styled Jerseys" },
+  { href: "/products/football-jerseys", img: "/products/football-jerseys/1.png", title: "Football Jerseys" },
+  { href: "/products/hoodies", img: "/products/hoodies/1.png", title: "Hoodies" },
+  { href: "/products/no-slv-hoodies", img: "/products/no-slv-hoodies/1.png", title: "no-sleeve Hoodies" },
+  { href: "/products/sports-pants", img: "/products/sports-pants/1.png", title: "Sports Pants" },
+  { href: "/products/sports-shirts", img: "/products/sports-shirts/1.png", title: "Sports Shirts" },
 ];
 
 function RowMarquee({ speed = 10000 }) {
@@ -44,7 +45,7 @@ function RowMarquee({ speed = 10000 }) {
         >
           <Link
             href={item.href}
-            className="group relative block h-[160px] sm:h-[180px] md:h-[300px] overflow-hidden rounded-2xl bg-black/20 shadow-xl"
+            className="group relative block h-[160px] sm:h-[180px] md:h-[300px] overflow-hidden rounded-2xl bg-white shadow-xl"
           >
             {/* IMAGE */}
             <Image
