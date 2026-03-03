@@ -20,7 +20,7 @@ const PRODUCTS = [
     desc: "Heavy GSM • Embroidery ready",
     meta: "MOQ 50 • 300 GSM • 12–15 Days",
     href: "/products/hoodies",
-    image: "/Products/hoodies/1.png",
+    image: "/Products/Hoodies/1.png",
   },
   {
     id: "3",
