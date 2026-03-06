@@ -13,9 +13,9 @@ const ITEMS = [
   { href: "/Products/basketball-kits", img: "/Products/basketball-kits/1.png", title: "Basketball Kits" },
   { href: "/products/basketball-styled-jerseys", img: "/Products/basketball-styled-jerseys/1.png", title: "Basketball Styled Jerseys" },
   { href: "/products/football-jerseys", img: "/Products/football-jerseys/1.png", title: "Football Jerseys" },
-  { href: "/products/hoodies", img: "/Products/hoodies/1.png", title: "Hoodies" },
+  { href: "/products/hoodies", img: "/Products/Hoodies/1.png", title: "Hoodies" },
   { href: "/products/sleeveless-hoodies", img: "/Products/sleeveless-hoodies/1.png", title: "no-sleeve Hoodies" },
-  { href: "/products/sports-pants", img: "/Products/sports-pants/1.png", title: "Sports Pants" },
+  { href: "/products/baseball-pants", img: "/Products/baseball-pants/1.png", title: "Sports Pants" },
   { href: "/products/sports-shirts", img: "/Products/sports-shirts/1.png", title: "Sports Shirts" },
 ];
 
