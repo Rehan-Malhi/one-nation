@@ -100,7 +100,7 @@ export default function Featured() {
                   </p>
                   <div className="flex gap-2">
                     <Link
-                      href={item.href}
+                      href="/inquiry"
                       className="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-4 py-3 text-sm font-bold text-white transition-all duration-200 hover:bg-black hover:shadow-lg"
                     >
                       Get Quote
