@@ -22,7 +22,7 @@ export default function ProductCard({ product, category, index = 0 }) {
         >
             <Link href={`/products/${category}/${product.slug}`}>
                 <div className="overflow-hidden">
-                    <Image
+                    <img
                         fill="true"
                         src={product.image}
                         alt={product.title}
