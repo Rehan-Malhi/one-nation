@@ -10,10 +10,29 @@
   --hero-bg-image: none;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-inter), var(--font-poppins), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: rgb(222, 222, 222);
   color: var(--oni-white);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: rgba(185, 28, 28, 0.25);
+  color: inherit;
+}
+
+/* Smooth focus outlines */
+*:focus-visible {
+  outline: 2px solid var(--oni-blue);
+  outline-offset: 2px;
 }
 
 a {

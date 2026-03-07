@@ -11,6 +11,7 @@ import {
   FaInstagram,
   FaComments,
 } from "react-icons/fa";
+import FadeInOnScroll from "@/components/ui/FadeInOnScroll";
 
 
 const MAIN_CATEGORIES = [
@@ -51,75 +52,81 @@ export default function FooterProsixStyle() {
     <footer className="w-full bg-[#1f1f1f] text-white">
       {/* TOP */}
       <div className="mx-auto w-full max-w-[1700px] px-6 py-12">
-        <div className="grid gap-10 lg:grid-cols-12">
+        <div className="grid gap-10 lg:grid-cols-3">
           {/* MAIN CATEGORIES */}
-          <div className="lg:col-span-4">
-            <h3 className="text-sm font-bold tracking-widest text-white/90">
-              MAIN CATEGORIES
-            </h3>
-            <div className="mt-6 h-px w-full bg-white/10" />
-            <ul className="mt-6 space-y-3 text-[13px] text-white/70">
-              {MAIN_CATEGORIES.map((t) => (
-                <li key={t}>
-                  <a
-                    href="#"
-                    className="transition hover:text-white hover:underline"
-                  >
-                    {t}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <FadeInOnScroll delay={0} yOffset={25}>
+            <div className="lg:col-span-4">
+              <h3 className="text-sm font-bold tracking-widest text-white/90">
+                MAIN CATEGORIES
+              </h3>
+              <div className="mt-6 h-px w-full bg-white/10" />
+              <ul className="mt-6 space-y-3 text-[13px] text-white/70">
+                {MAIN_CATEGORIES.map((t) => (
+                  <li key={t}>
+                    <a
+                      href="#"
+                      className="transition hover:text-white hover:underline"
+                    >
+                      {t}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </FadeInOnScroll>
 
           {/* QUICK LINKS */}
-          <div className="lg:col-span-3 lg:border-l lg:border-white/10 lg:pl-10">
-            <h3 className="text-sm font-bold tracking-widest text-white/90">
-              QUICK LINKS
-            </h3>
-            <div className="mt-6 h-px w-full bg-white/10" />
-            <ul className="mt-6 space-y-3 text-[13px] text-white/70">
-              {QUICK_LINKS.map((t) => (
-                <li key={t}>
-                  <a
-                    href="#"
-                    className="transition hover:text-white hover:underline"
-                  >
-                    {t}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <FadeInOnScroll delay={0.1} yOffset={25}>
+            <div className="lg:col-span-3 lg:border-l lg:border-white/10 lg:pl-10">
+              <h3 className="text-sm font-bold tracking-widest text-white/90">
+                QUICK LINKS
+              </h3>
+              <div className="mt-6 h-px w-full bg-white/10" />
+              <ul className="mt-6 space-y-3 text-[13px] text-white/70">
+                {QUICK_LINKS.map((t) => (
+                  <li key={t}>
+                    <a
+                      href="#"
+                      className="transition hover:text-white hover:underline"
+                    >
+                      {t}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </FadeInOnScroll>
 
           {/* CONTACT US */}
-          <div className="lg:col-span-5 lg:border-l lg:border-white/10 lg:pl-10">
-            <h3 className="text-sm font-bold tracking-widest text-white/90">
-              CONTACT US
-            </h3>
-            <div className="mt-6 h-px w-full bg-white/10" />
+          <FadeInOnScroll delay={0.2} yOffset={25}>
+            <div className="lg:col-span-5 lg:border-l lg:border-white/10 lg:pl-10">
+              <h3 className="text-sm font-bold tracking-widest text-white/90">
+                CONTACT US
+              </h3>
+              <div className="mt-6 h-px w-full bg-white/10" />
 
-            <div className="mt-6 grid gap-8 md:grid-cols-2">
+              <div className="mt-6 grid gap-8 md:grid-cols-2">
 
-              {/* UK */}
-              <div className="space-y-4 text-[13px] text-white/70">
-                <div className="flex hover:text-red-300 items-start gap-3">
-                  <FaPhoneAlt className="mt-[2px] h-4 w-4 text-white/60" />
-                  <Link href="wa.me/923036835366">+92 303 6835366</Link>
-                </div>
-                <div className="flex hover:text-red-300 items-start gap-3">
-                  <FaEnvelope className="mt-[2px] h-4 w-4 text-white/60" />
-                  <Link href={"/"}>business@onenationindustry.com</Link>
-                </div>
-                <div className="flex hover:text-red-300 items-start gap-3">
-                  <FaMapMarkerAlt className="mt-[2px] h-4 w-4 text-white/60" />
-                  <span>
-                    Choty jhody wali khurd Sialkot 51310
-                  </span>
+                {/* UK */}
+                <div className="space-y-4 text-[13px] text-white/70">
+                  <div className="flex hover:text-red-300 items-start gap-3">
+                    <FaPhoneAlt className="mt-[2px] h-4 w-4 text-white/60" />
+                    <Link href="wa.me/923036835366">+92 303 6835366</Link>
+                  </div>
+                  <div className="flex hover:text-red-300 items-start gap-3">
+                    <FaEnvelope className="mt-[2px] h-4 w-4 text-white/60" />
+                    <Link href={"/"}>business@onenationindustry.com</Link>
+                  </div>
+                  <div className="flex hover:text-red-300 items-start gap-3">
+                    <FaMapMarkerAlt className="mt-[2px] h-4 w-4 text-white/60" />
+                    <span>
+                      Choty jhody wali khurd Sialkot 51310
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </FadeInOnScroll>
         </div>
 
         {/* BOTTOM ROW (cert / payments / newsletter) */}

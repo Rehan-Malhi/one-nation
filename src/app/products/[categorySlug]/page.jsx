@@ -13,18 +13,19 @@ export default async function CategoryPage({ params }) {
 
         <div className="max-w-7xl mx-auto px-6 py-12">
 
-            <h1 className="text-4xl text-black font-bold mb-10">
-                {categorySlug}
+            <h1 className="text-4xl text-black font-bold mb-10 tracking-tight capitalize">
+                {categorySlug.replace(/-/g, " ")}
             </h1>
 
             <div className="grid md:grid-cols-3 gap-8">
 
                 {products.length > 0 ? (
-                    products.map(product => (
+                    products.map((product, idx) => (
                         <ProductCard
                             key={product.id}
                             product={product}
                             category={categorySlug}
+                            index={idx}
                         />
                     ))
                 ) : (

@@ -48,10 +48,10 @@ function RowMarquee({ speed = 10000 }) {
             className="group relative block h-[160px] sm:h-[180px] md:h-[300px] overflow-hidden rounded-2xl bg-white shadow-xl"
           >
             {/* IMAGE */}
-            <img
+            <Image
               src={item.img}
               alt={item.title}
-              fill
+              fill = "true"
               sizes="(max-width: 640px) 260px, (max-width: 768px) 300px, 340px"
               className="object-contain p-6 transition-transform duration-500 ease-out group-hover:scale-110"
               priority={i < 4}
