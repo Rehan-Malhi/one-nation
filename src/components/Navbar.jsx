@@ -27,27 +27,32 @@ export default function Navbar() {
 
   // ✅ Normalize categories from products.js
   const ALL_CATEGORIES = useMemo(() => {
+  const categories = productsData?.categories ?? [];
+  const products = productsData?.products ?? [];
 
-    const categories = productsData?.categories ?? []
-    const products = productsData?.products ?? []
+  return categories.map((cat) => {
+    const catProducts = products.filter((p) => p.category === cat.slug);
 
-    return categories.map(cat => ({
-
+    return {
       title: cat.title,
       slug: cat.slug,
+      image: cat.image || "/placeholder.png",
+      href: `/products/${cat.slug}`,
 
-      items: products
-        .filter(p => p.category === cat.slug)
-        .map(p => ({
+      startingPrice:
+        catProducts.length > 0
+          ? Math.min(...catProducts.map((p) => p.price || 0))
+          : null,
 
-          label: p.title,
-          href: `/products/${cat.slug}/${p.slug}`
-
-        }))
-
-    }))
-
-  }, [])
+      items: catProducts.map((p) => ({
+        label: p.title,
+        href: `/products/${cat.slug}/${p.slug}`,
+        image: p.image || "/placeholder.png",
+        price: p.price || null,
+      })),
+    };
+  });
+}, []);
 
   // ✅ Navbar shows only 5 categories (featured preferred)
   const NAV_CATEGORIES = useMemo(() => {
@@ -340,7 +345,7 @@ export default function Navbar() {
                     <div className="px-3 pb-3">
                       <div className="grid gap-2">
                         {NAV_CATEGORIES.map((cat) => (
-                          <details
+                          <details open 
                             key={cat.title}
                             className="rounded-xl border border-white/10 bg-white/5"
                           >
@@ -399,7 +404,7 @@ export default function Navbar() {
 
                               <div className="px-2 pb-2 pt-1">
                                 <Link
-                                  href={cat.href || "/products"}
+                                  href={`/products/${cat.slug}`}
                                   className="block rounded-lg px-3 py-2 text-[12px] text-white/70 hover:bg-white/10"
                                   onClick={() => setMobileOpen(false)}
                                 >
@@ -412,27 +417,19 @@ export default function Navbar() {
                       </div>
                     </div>
                   </div>
-
-                  <Link
-                    href="#"
+                     <Link
+                    href="/factory"
                     className="rounded-xl border border-white/10 bg-white/5 px-4 py-3"
                     onClick={() => setMobileOpen(false)}
                   >
-                    Team Store
+                    Factory
                   </Link>
                   <Link
-                    href="#"
+                    href="/inquiry"
                     className="rounded-xl border border-white/10 bg-white/5 px-4 py-3"
                     onClick={() => setMobileOpen(false)}
                   >
-                    Support
-                  </Link>
-                  <Link
-                    href="#"
-                    className="rounded-xl border border-white/10 bg-white/5 px-4 py-3"
-                    onClick={() => setMobileOpen(false)}
-                  >
-                    Contact
+                    Inquiry
                   </Link>
 
                   <div className="mt-4 rounded-2xl border border-white/10 bg-white/5 p-4">
