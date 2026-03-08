@@ -8,11 +8,11 @@ import FadeInOnScroll from "@/components/ui/FadeInOnScroll";
 const PRODUCTS = [
   {
     id: "1",
-    title: "Basketball Kits",
+    title: "Soccer Shirts",
     desc: "Custom sublimation • Pro athletic fit",
     meta: "MOQ 50 • 180–220 GSM • 10–14 Days",
     href: "/products/football",
-    image: "/Products/basketball-kits/1.png",
+    image: "/Products/soccer-shirts/1.png",
     badge: "Most Ordered",
   },
   {
@@ -25,11 +25,11 @@ const PRODUCTS = [
   },
   {
     id: "3",
-    title: "Basketball Styled Jerseys",
+    title: "WN breakers",
     desc: "Comfort stretch • Team sets",
     meta: "MOQ 50 • 220 GSM • 10–12 Days",
-    href: "/products/basketball-styled-jerseys",
-    image: "/Products/basketball-styled-jerseys/3.png",
+    href: "/products/wnbreakers",
+    image: "/Products/wnbreakers/3.png",
   },
   {
     id: "4",

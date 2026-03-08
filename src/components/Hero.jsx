@@ -15,11 +15,6 @@ export default function Hero() {
       bgSrc: "/front-images/bg/2.png",
     },
     {
-      kicker: "Basketball Uniforms",
-      imageSrc: "/front-images/basketball-uniforms.png",
-      bgSrc: "/front-images/bg/3.png",
-    },
-    {
       kicker: "Hoodies & Lifestyle",
       imageSrc: "/front-images/hoodies.png",
       bgSrc: "/front-images/bg/6.png",

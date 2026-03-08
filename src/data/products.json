@@ -9,24 +9,17 @@
     },
     {
       "id": "2",
-      "title": "Basketball Jerseys",
-      "slug": "basketball-jerseys",
+      "title": "Wn Breakers",
+      "slug": "wnbreakers",
       "description": "Premium cotton and blended T-shirts.",
-      "image": "/Products/basketball-jerseys/1.png"
-    },
-    {
-      "id": "3",
-      "title": "basketball kits",
-      "slug": "basketball-kits",
-      "description": "Premium cotton and blended T-shirts.",
-      "image": "/Products/basketball-kits/1.png"
+      "image": "/Products/wnbreakers/1.png"
     },
     {
       "id": "4",
-      "title": "Basketball Styled Jerseys",
-      "slug": "basketball-styled-jerseys",
+      "title": "Soccer Shirts",
+      "slug": "soccer-shirts",
       "description": "Premium cotton and blended T-shirts.",
-      "image": "/Products/basketball-styled-jerseys/1.png"
+      "image": "/Products/soccer-shirts/1.png"
     },
     {
       "id": "5",
@@ -117,40 +110,32 @@
       "title": "Raptors – Purple/Navy Sleeveless Basketball Jersey",
       "slug": "raptors-purple-navy-sleeveless-basketball-jersey",
       "description": "Lightweight mesh-blend polyester offering maximum airflow and durability during intense play. Advanced sublimation printing delivers vibrant purple and navy graphics with bold mascot detailing and sharp numbering. Designed for athletic mobility with reinforced armholes and smooth inner seams for enhanced comfort. Fully customizable in colors, typography styles, numbering, sponsor prints, fabric textures, and sizing from Youth to 5XL with private labeling options.",
-      "image": "/Products/basketball-jerseys/2.png",
-      "category": "basketball-jerseys"
+      "image": "/Products/wnbreakers/2.png",
+      "category": "wnbreakers"
     },
     {
       "id": "7",
       "title": "Bulldogs – Yellow/Green Sleeveless Basketball Jersey",
       "slug": "bulldogs-yellow-green-sleeveless-basketball-jersey",
       "description": "Breathable performance polyester mesh engineered for flexibility and long-lasting wear. High-definition sublimation printing ensures bright yellow and green graphics with clear number visibility and fade-resistant colors. Built for active performance with reinforced arm openings and smooth interior stitching for comfort. Fully customizable in colors, logo placement, numbering styles, sponsor graphics, fabric textures, and sizes from Youth to 5XL.",
-      "image": "/Products/basketball-jerseys/4.png",
-      "category": "basketball-jerseys"
-    },
-    {
-      "id": "8",
-      "title": "Young Grinders – White/Gold Sleeveless Basketball Jersey",
-      "slug": "young-grinders-white-gold-sleeveless-basketball-jersey",
-      "description": "Premium lightweight polyester mesh designed for superior ventilation and durability. Precision sublimation printing creates clean white and gold styling with bold typography and sharp number detailing. Engineered for unrestricted movement with reinforced armholes and soft inner seams for extended comfort. Fully customizable in colors, typography styles, numbers, sponsor prints, fabric patterns, and sizing from Youth to 5XL.",
-      "image": "/Products/basketball-jerseys/5.png",
-      "category": "basketball-jerseys"
+      "image": "/Products/wnbreakers/4.png",
+      "category": "wnbreakers"
     },
     {
       "id": "9",
       "title": "Savages – Black/Green Sleeveless Basketball Jersey",
       "slug": "savages-black-green-sleeveless-basketball-jersey",
       "description": "High-performance breathable mesh polyester providing excellent airflow and durability. Advanced sublimation printing produces striking black and neon green graphics with bold mascot styling and crisp numbering. Designed for flexibility with reinforced arm openings and smooth inner seams for maximum comfort. Fully customizable in colors, numbering styles, logos, sponsor branding, fabric textures, and sizing from Youth to 5XL.",
-      "image": "/Products/basketball-jerseys/3.png",
-      "category": "basketball-jerseys"
+      "image": "/Products/wnbreakers/3.png",
+      "category": "wnbreakers"
     },
     {
       "id": "10",
       "title": "Lions Life – Navy/Gold Sleeveless Basketball Jersey",
       "slug": "lions-life-navy-gold-sleeveless-basketball-jersey",
       "description": "Durable lightweight mesh polyester construction designed for performance and ventilation. Professional sublimation printing ensures deep navy and gold graphics with sharp numbering and clean detailing. Built for athletic comfort featuring reinforced armholes and smooth interior stitching for long-lasting wear. Fully customizable in colors, typography styles, numbering formats, sponsor logos, fabric textures, and sizing from Youth to 5XL.",
-      "image": "/Products/basketball-jerseys/1.png",
-      "category": "basketball-jerseys"
+      "image": "/Products/wnbreakers/1.png",
+      "category": "wnbreakers"
     },
     {
       "id": "11",
@@ -221,48 +206,48 @@
       "title": "Wildcats – Sky Blue/Navy Sleeveless Hoodie Jersey",
       "slug": "wildcats-sky-blue-navy-sleeveless-hoodie-jersey",
       "description": "Lightweight mesh-blend polyester engineered for superior breathability and long-term durability. High-definition sublimation printing delivers vibrant sky-blue gradients with bold Wildcats typography, panther graphics, and crisp number detailing. Designed for performance mobility with reinforced armholes and precision-stitched seams for enhanced comfort. Fully customizable in colors, typography style, numbering, sponsor prints, fabric texture, and sizing to meet team or brand requirements.",
-      "image": "/Products/basketball-styled-jerseys/1.png",
-      "category": "basketball-styled-jerseys"
+      "image": "/Products/soccer-shirts/1.png",
+      "category": "soccer-shirts"
     },
     {
       "id": "20",
       "title": "Ghost – White/Red Sleeveless Hoodie Jersey",
       "slug": "ghost-white-red-sleeveless-hoodie-jersey",
       "description": "Premium moisture-wicking polyester mesh providing optimal airflow and lightweight performance. Advanced sublimation technology ensures sharp white base tones with distressed graphic effects and standout number application. Athletic cut construction enhances range of motion, complemented by reinforced arm openings and smooth inner lining. Fully customizable in color schemes, fonts, numbering formats, sponsor placements, fabric options, and custom sizing.",
-      "image": "/Products/basketball-styled-jerseys/2.png",
-      "category": "basketball-styled-jerseys"
+      "image": "/Products/soccer-shirts/2.png",
+      "category": "soccer-shirts"
     },
     {
       "id": "21",
       "title": "Energy – Neon Green/Black Sleeveless Hoodie Jersey",
       "slug": "energy-neon-green-black-sleeveless-hoodie-jersey",
       "description": "High-performance breathable mesh fabric designed for intense activity and durability. Dynamic sublimation printing produces vibrant neon green splatter graphics with bold artwork and detailed numbering. Ergonomic sleeveless construction allows unrestricted movement, reinforced with durable stitching and soft internal finishing for all-day comfort. Fully customizable in graphic themes, colors, typography, player numbers, branding elements, material weight, and sizing specifications.",
-      "image": "/Products/basketball-styled-jerseys/3.png",
-      "category": "basketball-styled-jerseys"
+      "image": "/Products/soccer-shirts/3.png",
+      "category": "soccer-shirts"
     },
     {
       "id": "22",
       "title": "Florida Motion – Black/Multicolor Sleeveless Hoodie Jersey",
       "slug": "florida-motion-black-multicolor-sleeveless-hoodie-jersey",
       "description": "Lightweight technical polyester offering enhanced ventilation and sweat management. Precision sublimation captures high-resolution cityscape artwork with striking multicolor accents and bold front branding. Athletic performance fit ensures flexibility, while reinforced armholes and flatlock seams improve durability and reduce friction. Fully customizable in design layouts, logo placements, color palettes, numbering styles, fabric finishes, and tailored sizing.",
-      "image": "/Products/basketball-styled-jerseys/4.png",
-      "category": "basketball-styled-jerseys"
+      "image": "/Products/soccer-shirts/4.png",
+      "category": "soccer-shirts"
     },
     {
       "id": "23",
       "title": "Elite Atlético Bombers – White/Red/Navy Sleeveless Hoodie Jersey",
       "slug": "elite-atletico-bombers-white-red-navy-sleeveless-hoodie-jersey",
       "description": "Breathable mesh-blend polyester engineered for comfort and structural resilience. Advanced sublimation guarantees crisp white fabric contrast with bold stripe graphics and detailed team branding. Designed with performance-focused arm openings and smooth seam finishing to enhance mobility and reduce irritation. Fully customizable in team colors, typography systems, numbering formats, sponsor integrations, fabric selection, and complete size range.",
-      "image": "/Products/basketball-styled-jerseys/5.png",
-      "category": "basketball-styled-jerseys"
+      "image": "/Products/soccer-shirts/5.png",
+      "category": "soccer-shirts"
     },
     {
       "id": "24",
       "title": "Friendship – Gold/Navy Sleeveless Hoodie Jersey",
       "slug": "friendship-gold-navy-sleeveless-hoodie-jersey",
       "description": "Durable lightweight polyester mesh optimized for airflow and active wear performance. High-definition sublimation ensures rich gold tones with dynamic splatter graphics and bold varsity-style lettering. Structured sleeveless cut enhances flexibility, supported by reinforced stitching and soft interior seams for extended wear comfort. Fully customizable in color combinations, font styles, numbering design, logo positioning, textile texture, and sizing requirements.",
-      "image": "/Products/basketball-styled-jerseys/6.png",
-      "category": "basketball-styled-jerseys"
+      "image": "/Products/soccer-shirts/6.png",
+      "category": "soccer-shirts"
     },
     {
       "id": "25",
@@ -327,38 +312,6 @@
       "description": "Lightweight ventilated mesh fabric engineered for professional-level comfort and durability. Advanced sublimation printing ensures crisp white base with high-contrast black numbering and clean team typography. Structured V-neck collar and reinforced arm openings provide stability during gameplay. Athletic fit construction enhances mobility without restricting performance. Fully customizable in logo placement, numbering dimensions, alternate color schemes, fabric thickness, private labeling, and full production size range.",
       "image": "/Products/football-jerseys/4.png",
       "category": "football-jerseys"
-    },
-    {
-      "id": "33",
-      "title": "Broncos – Black/Teal Basketball Uniform",
-      "slug": "broncos-black-teal-basketball-uniform",
-      "description": "High-performance breathable mesh fabric designed for competitive basketball environments. Dynamic sublimation printing features a bold black base with vibrant teal and orange splash graphics for a modern athletic look. Reinforced V-neck collar and durable arm trim ensure long-lasting structure throughout intense gameplay. Lightweight athletic-cut jersey and shorts provide unrestricted mobility and moisture control. Fully customizable including logo placement, player names, numbering size, alternate color variations, fabric weight options, private labeling, and complete size range production.",
-      "image": "/Products/basketball-kits/1.png",
-      "category": "basketball-kits"
-    },
-    {
-      "id": "34",
-      "title": "Laredo RWE – Royal Blue Basketball Uniform",
-      "slug": "laredo-rwe-royal-blue-basketball-uniform",
-      "description": "Premium ventilated performance fabric engineered for durability and all-game comfort. Clean royal blue body accented with silver side striping and precision sublimated team typography for a professional finish. Structured V-neck collar construction enhances stability while maintaining flexibility. Ergonomic athletic fit maximizes speed, agility, and court movement. Customizable features include team branding, player numbering, side panel designs, fabric thickness options, private labeling, and full sizing availability.",
-      "image": "/Products/basketball-kits/2.png",
-      "category": "basketball-kits"
-    },
-    {
-      "id": "35",
-      "title": "Mighty Raptors – Orange/Green Basketball Uniform",
-      "slug": "mighty-raptors-orange-green-basketball-uniform",
-      "description": "Advanced moisture-wicking mesh material built for high-intensity basketball performance. Vibrant orange base paired with neon green accents and detailed sublimated graphics delivers standout visual impact. Durable neckline and armhole stitching provide enhanced wear resistance. Coordinated shorts feature gradient dot patterns and reinforced waistband for optimal comfort. Fully customizable with mascot graphics, sponsor logos, numbering styles, alternate colorways, material upgrades, private branding, and inclusive size production.",
-      "image": "/Products/basketball-kits/3.png",
-      "category": "basketball-kits"
-    },
-    {
-      "id": "36",
-      "title": "Bears – White/Green Basketball Uniform",
-      "slug": "bears-white-green-basketball-uniform",
-      "description": "Professional-grade lightweight basketball set crafted from breathable quick-dry mesh fabric. Crisp white base complemented by deep green typography and minimalist striping for a classic competitive aesthetic. Reinforced V-neck collar and precision-cut arm openings maintain structure during play. Tailored athletic fit ensures enhanced flexibility and comfort on the court. Customization options include team logos, national flag patches, player numbers, alternate trims, fabric weight selection, private labeling, and full size range manufacturing.",
-      "image": "/Products/basketball-kits/4.png",
-      "category": "basketball-kits"
     },
     {
       "id": "37",

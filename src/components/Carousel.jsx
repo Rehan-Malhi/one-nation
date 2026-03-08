@@ -9,9 +9,8 @@ import "swiper/css";
 
 const ITEMS = [
   { href: "/products/baseball-jerseys", img: "/Products/baseball-jerseys/1.png", title: "Baseball Jerseys" },
-  { href: "/Products/basketball-jerseys", img: "/Products/basketball-jerseys/1.png", title: "Basketball Jerseys" },
-  { href: "/Products/basketball-kits", img: "/Products/basketball-kits/1.png", title: "Basketball Kits" },
-  { href: "/products/basketball-styled-jerseys", img: "/Products/basketball-styled-jerseys/1.png", title: "Basketball Styled Jerseys" },
+  { href: "/Products/wnbreakers", img: "/Products/wnbreakers/1.png", title: "wnbreakers" },
+  { href: "/products/soccer-shirts", img: "/Products/soccer-shirts/1.png", title: "Soccer Shirts" },
   { href: "/products/football-jerseys", img: "/Products/football-jerseys/1.png", title: "Football Jerseys" },
   { href: "/products/hoodies", img: "/Products/Hoodies/1.png", title: "Hoodies" },
   { href: "/products/sleeveless-hoodies", img: "/Products/sleeveless-hoodies/1.png", title: "no-sleeve Hoodies" },
