@@ -12,12 +12,7 @@ import WhatsappFloating from "@/components/WhatsappFloating";
 export default function HomePage() {
   return (
     <>
-      <Hero />
-      <MovingProductComponents />
-      <ThreeQualities />
-      <Featured />
-      <TestimonialsSlider />
-      <WhatsappFloating />
+      <h1>No need website 😂😂</h1>
     </>
   );
 }
