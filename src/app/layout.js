@@ -36,9 +36,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppins.variable} antialiased`}
       >
-        <Navbar />
         {children}
-        <FooterProsixStyle />
       </body>
     </html>
   );

@@ -12,7 +12,7 @@ import WhatsappFloating from "@/components/WhatsappFloating";
 export default function HomePage() {
   return (
     <>
-      <h1>No need website 😂😂</h1>
+      <h1 className="flex justify-center items-center text-5xl h-screen">No need website 😂😂</h1>
     </>
   );
 }
